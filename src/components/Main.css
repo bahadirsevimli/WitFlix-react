@@ -1,0 +1,92 @@
+main {
+  background-image: url(/Assets/Matrix.jpg);
+  background-color: #cccccc;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size: 1em;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: transform 0.2s;
+  min-width: 645px;
+}
+
+main .maturity-rating {
+  border: 1px solid black;
+  height: 20px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #ff0000;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  width: 180px;
+  height: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.hero-content {
+  padding: 40px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.movie-info {
+  display: flex;
+  gap: 20px;
+}
+.user-ratings {
+  display: flex;
+  gap: 5px;
+}
+.maturity-rating {
+  border: 1px solid white;
+  height: 15px;
+}
+
+.movie-details-header {
+  font-weight: bold;
+}
+.movie-details {
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  width: 60%;
+}
