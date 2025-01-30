@@ -6,6 +6,7 @@ import img4 from "../assets/images/4.jpg"
 import img5 from "../assets/images/5.jpg"
 import img6 from "../assets/images/6.webp"
 import Button from "./small-components/Button"
+import { Link } from "react-router-dom";
 
 export default function Section(){
 
@@ -15,7 +16,7 @@ return(
         <div className="suggestion-row-1">
                 <div className="suggestion-title">
                     <h2>Popular Movies</h2>
-                    <a>View All</a>
+                    <Link className="a" to="/allmovies">View All</Link>
                 </div>
                 <div className="suggestion-content">
 
@@ -41,7 +42,7 @@ return(
         <div className="suggestion-row-2">
                 <div className="suggestion-title">
                     <h2>Recommended for You</h2>
-                    <a>View All</a>
+                    <Link className="a" to="/allmovies">View All</Link>
                 </div>
                 <div className="suggestion-content">
 

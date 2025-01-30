@@ -12,7 +12,7 @@ export default function Header() {
         <a>Settings</a>
       </nav>
       <div className="search">
-        <input type="search" placeholder="Search" />
+        <input type="search" placeholder="  Search.." />
         <img src={user} />
       </div>
     </header>
