@@ -1,5 +1,6 @@
 import './Main.css';
 import Background from '../assets/images/Matrix.jpg';
+import Button from './small-components/Button';
 export default function Main() {
   return (
     <main className="main" style={{ backgroundImage: `url(${Background})` }}>
@@ -65,9 +66,7 @@ export default function Main() {
             </p>
           </li>
         </ul>
-        <button className="button" style={{ verticalAlign: 'middle' }}>
-          <span>Play Now </span>
-        </button>
+       <Button/>
       </div>
     </main>
   );
