@@ -4,8 +4,8 @@ import movieData from "../assets/data/movies.json";
 import Button from "./small-components/Button";
 
 
-export default function allmovies (){
-
+export default function Allmovies (props){
+    const { searchItem } = props;
     const [films, setFilms] = useState([]);
     useEffect(() => {
         setFilms(movieData);
@@ -15,7 +15,9 @@ export default function allmovies (){
 
     return(
        <div className="wrapper-box">
-            {films.map((movie) => {
+            {films
+            .filter((item) => item.name.toLowerCase().includes(searchItem) )
+            .map((movie) => {
                 return(
                 <div 
                 className="box"

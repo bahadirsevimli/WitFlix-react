@@ -6,12 +6,20 @@ import Section from './components/Section';
 import Allmovies from './components/Allmovies';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
 
 function App() {
+
+const [searchText, setSearcText] = useState("");
+
+function searchProp(x){
+  setSearcText(x);
+}
+
   return (
     <div className="inclusive">
       <Router>
-      <Header />
+      <Header setFunction={searchProp} />
       <Routes>
         <Route
         path="/"
@@ -24,7 +32,7 @@ function App() {
        />
        <Route
        path='/allmovies'
-       element={<Allmovies/>}
+       element={<Allmovies searchItem={searchText}/>}
        />
       </Routes>
       <Footer/>

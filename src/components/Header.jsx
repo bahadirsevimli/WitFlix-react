@@ -1,9 +1,17 @@
+import { useState } from 'react';
 import logo from '../assets/images/WitFlix.png';
 import user from '../assets/images/user.png';
 import './Header.css';
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header(props) {
+  const { setFunction } = props;
+  const [search, setSearch] = useState("");
+
+function changeHandler(e){
+  setFunction(e.target.value.toLowerCase());
+  console.log("a");
+}
   return (
     <header className="header">
       <Link to="/">
@@ -25,7 +33,7 @@ export default function Header() {
           </Link>
       </nav>
       <div className="search">
-        <input type="search" placeholder="  Search.." />
+        <input onChange={changeHandler} type="text" placeholder="  Search.." />
         <img src={user} />
       </div>
     </header>
