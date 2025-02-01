@@ -7,6 +7,10 @@
 #logo-img{
   width: 200px;
 }
+#logo-img:hover{
+  width: 220px;
+  transition: 0.5s;
+}
 
 .search{
   display: flex;
@@ -32,15 +36,22 @@ nav{
   margin-left: 20px;
 }
 
-nav a{
+.header-a{
   font-size: 1.2em;
+  text-decoration: none;
+  color: gray;
+
+
 }
 
-nav a:hover{
-  color: gray !important;
+.header-a:hover{
+  color: white;
   cursor: pointer;
   transition: 0.2s;
 }
+
+
 .search img:hover{
   cursor: pointer;
 }
+

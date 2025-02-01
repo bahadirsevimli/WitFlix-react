@@ -1,0 +1,21 @@
+[
+    { "id": 1, "name": "Spiderman", "img": "1.jpg"},
+    { "id": 2, "name": "Fury", "img": "2.jpg" },
+    { "id": 3, "name": "Godfather (1972)", "img": "3.jpg"},
+    { "id": 4,"name": "Inception","img": "4.jpg"},
+    { "id": 5, "name": "Fight Clup", "img": "5.jpg" },
+    { "id": 6, "name": "Titanic", "img": "6.jpg" },
+    { "id": 7, "name": "Focus", "img": "7.jpg" },
+    { "id": 8, "name": "Burning Days9", "img": "8.jpg" },
+    { "id": 9, "name": "Under Paris1", "img": "9.jpg" },
+    { "id": 10, "name": "Nowhere", "img": "10.jpg" },
+    { "id": 11, "name": "Red Notice", "img": "11.jpg" },
+    { "id": 12, "name": "Carry On", "img": "12.jpg" },
+    { "id": 13, "name": "Damsel", "img": "13.jpg" },
+    { "id": 14, "name": "Rampage", "img": "14.jpg" },
+    { "id": 15, "name": "Blood Diamond", "img": "15.jpg" },
+    { "id": 16, "name": "Lucy", "img": "16.jpg" },
+    { "id": 17, "name": "Suicide Squad", "img": "17.jpg" },
+    { "id": 18, "name": "Penguins of Madagascar: The Movie", "img": "18.jpg" }
+  ]
+  

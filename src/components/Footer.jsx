@@ -12,10 +12,10 @@ export default function Footer(){
         <footer className="footer">
             <div className="footer-left">
                 <nav className="footer-nav">
-                <a>Term Of Use</a>
-                <a>Privacy-Policy</a>
-                <a>FAQ</a>
-                <a>Watch List</a>
+                <a href="#">Term Of Use</a>
+                <a href="#">Privacy-Policy</a>
+                <a href="#">FAQ</a>
+                <a href="#">Watch List</a>
                 </nav>
                 <p className="copyright">Lorem Ipsum dummy text the printing and typesetting industry. Lorem Ipsum has been the Industry's standard dummy text ever since 1500s, when an unknow printer took a gallery of type and scrambled it to make a type specimen book.</p>
             </div>
