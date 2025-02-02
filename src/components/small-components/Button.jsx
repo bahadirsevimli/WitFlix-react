@@ -1,6 +1,6 @@
 import "./Button.css"
 
-export default function(){
+export default function Button(){
 
 
     return(

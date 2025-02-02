@@ -14,7 +14,9 @@
     height: 200px;
     flex-basis: 30%;
     position: relative;
+    transition: transform 0.3s ease-in-out;
 }
+
 
 .box img{
     width: 100%;
@@ -28,3 +30,8 @@
     bottom: 0px;
     padding: 10px;
 }
+@media(min-width:1200px){
+.box:hover{
+    transform: scale(1.3);
+    
+}}

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./Allmovies.css";
 import movieData from "../assets/data/movies.json";
 import Button from "./small-components/Button";
+import { Link } from "react-router-dom";
 
 
 export default function Allmovies (props){
@@ -23,9 +24,11 @@ export default function Allmovies (props){
                 className="box"
                 key={movie.id}
                 >
-                    <img src={`/public/assets/images/${movie.img}`} alt="movie" />
+                    <Link to={`/movie/${movie.id}`}>
+                        <img src={`/public/assets/images/${movie.img}`} alt="movie" />
+                   </Link>
                     <div className="play-button">
-                        <Button id="allMoviesButton"/>
+                        <Button/>
                     </div>
                 </div>)
             })}
