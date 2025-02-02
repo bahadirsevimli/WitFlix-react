@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import Movie from './components/Movie';
 import moviesData from "./assets/data/movies.json";
+import User from './components/User';
+import AllSeries from './components/AllSeries';
 
 function App() {
 
@@ -37,11 +39,19 @@ function App() {
        path='/allmovies'
        element={<Allmovies searchItem={searchText}/>}
        />
+        <Route
+       path='/allseries'
+       element={<AllSeries searchItem={searchText}/>}
+       />
        <Route
        path='/moviedetail'
        element={<Movie/>}
        />
        <Route path="/movie/:id" element={<Movie movies={movies} />} />
+       <Route
+       path='/user'
+       element={<User/>}
+       />
       </Routes>
       <Footer/>
       </Router>

@@ -27,9 +27,10 @@ export default function Allmovies (props){
                     <Link to={`/movie/${movie.id}`}>
                         <img src={`/public/assets/images/${movie.img}`} alt="movie" />
                    </Link>
-                    <div className="play-button">
-                        <Button/>
-                    </div>
+                  
+                    <p className="content-header">
+                        {movie.name}
+                    </p>
                 </div>)
             })}
        </div>

@@ -20,21 +20,23 @@ function changeHandler(e){
       
       <nav id="header-nav">
           <Link to="/allmovies">
-          <a className='header-a'>Movies</a>
+            <a data-cy="openAllMovies" className='header-a'>Movies</a>
+          </Link>
+          <Link to="/allseries">
+            <a className='header-a'>Series</a>
           </Link>
           <Link >
-          <a className='header-a'>Series</a>
+            <a className='header-a'>My List</a>
           </Link>
           <Link >
-          <a className='header-a'>My List</a>
-          </Link>
-          <Link >
-          <a className='header-a'>Settings</a>
+            <a className='header-a'>Settings</a>
           </Link>
       </nav>
       <div className="search">
-        <input onChange={changeHandler} type="text" placeholder="  Search.." />
-        <img src={user} />
+        <input id='header-input' onChange={changeHandler} type="text" placeholder="  Search.." />
+        <Link to="/user">
+          <img src={user} />
+        </Link>
       </div>
     </header>
   );

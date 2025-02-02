@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 50px 50px 50px 20px;
+  width: 100%;
 }
 
 #logo-img{
@@ -18,7 +19,7 @@
   gap: 20px;
 }
 
-input{
+#header-input{
   height: 35px;
   width: 100%;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;

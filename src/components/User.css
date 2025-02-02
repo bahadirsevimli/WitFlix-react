@@ -1,0 +1,41 @@
+.form-div{
+    width: 40%;
+    background-color: #8c8c8c;
+    padding: 30px 40px;
+    border-radius: 20px;
+   
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#form-header{
+    padding-bottom: 10px;
+}
+
+.register-form-input{
+    font-size: 1em;
+    color: white;
+    border: 1px solid white;
+    background-color: #8c8c8c;
+    border-radius: 7px;
+    height: 50px;
+    padding: 10px;
+
+}
+
+.register-form-submit{
+    background-color: red;
+    border-radius: 7px;
+    height: 40px;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+}
+
+.alert-message{
+    color: #161616b3;
+}

@@ -4,6 +4,7 @@ import social2 from "../assets/images/s2.png"
 import social3 from "../assets/images/s3.png"
 import social4 from "../assets/images/apple.png"
 import social5 from "../assets/images/google.png"
+import { Link } from "react-router-dom";
 
 export default function Footer(){
     
@@ -22,9 +23,9 @@ export default function Footer(){
             <div className="footer-mid">
                 <p>Follow Us</p>
                 <div>
-                    <img className="social-logo" src={social1} alt="facebook"/>
-                    <img className="social-logo" src={social2} alt="youtube"/>
-                    <img className="social-logo" src={social3} alt="twitter"/>
+                    <Link to="https://www.facebook.com/"> <img className="social-logo" src={social1} alt="facebook"/></Link>
+                    <Link to="https://www.youtube.com/"> <img className="social-logo" src={social2} alt="youtube"/></Link>
+                    <Link to="https://www.x.com/"><img className="social-logo" src={social3} alt="twitter"/></Link>
                 </div>
             </div>
             <div className="footer-right">

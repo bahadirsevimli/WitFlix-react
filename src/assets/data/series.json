@@ -1,0 +1,14 @@
+[
+    { "id": 1, "name": "Prison Break", "img": "101.jpg"},
+    { "id": 2, "name": "Lost", "img": "102.jpg"},
+    { "id": 3, "name": "Breaking Bad", "img": "103.jpg"},
+    { "id": 4, "name": "Doctor House", "img": "104.jpg"},
+    { "id": 5, "name": "Lucifer", "img": "105.jpg"},
+    { "id": 6, "name": "Dexter", "img": "106.jpg"},
+    { "id": 7, "name": "Vikings", "img": "107.jpg"},
+    { "id": 8, "name": "Love 101", "img": "108.jpg"},
+    { "id": 9, "name": "Young Sheldon", "img": "109.jpg"},
+    { "id": 10, "name": "Stranger Things", "img": "110.jpg"},
+    { "id": 11, "name": "Ragnarok", "img": "111.jpg"},
+    { "id": 12, "name": "Blacklist", "img": "112.jpg"}
+]

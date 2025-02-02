@@ -1,3 +1,21 @@
+describe("Main Page Tests", () => {
+  beforeEach(() => cy.visit("http://localhost:5174/"));
+  it("example test", () => {
+    cy.contains("MATRİX").should("be.visible");
+  })
+  it("is button working?", () => {
+    cy.get(`[data-cy="openAllMovies"]`).click();
+    cy.url().should("include", "/allmovies");
+  })
+})
+
+
+
+
+
+
+
+
 /// <reference types="cypress" />
 
 // Welcome to Cypress!
@@ -142,7 +160,3 @@ describe('example to-do app', () => {
   })
 })
 
-it("my test", () => {
-  cy.visit("http://localhost:5173/");
-  cy.contains("MATRİX").should("be.visible");
-})

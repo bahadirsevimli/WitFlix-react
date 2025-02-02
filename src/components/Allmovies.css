@@ -5,8 +5,8 @@
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 50px;
-    column-gap: 20px;
+    row-gap: 90px;
+    column-gap: 15px;
 }
 
 .box{
@@ -15,14 +15,21 @@
     flex-basis: 30%;
     position: relative;
     transition: transform 0.3s ease-in-out;
+    
+    
 }
 
+
+.box img:hover{
+    border: 1px solid brown;
+}
 
 .box img{
     width: 100%;
     border-radius: 20px;
     height: 100%;
     object-fit: cover;
+    
 }
 
 .play-button{
@@ -30,6 +37,13 @@
     bottom: 0px;
     padding: 10px;
 }
+
+.content-header{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
 @media(min-width:1200px){
 .box:hover{
     transform: scale(1.3);
