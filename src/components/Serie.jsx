@@ -1,19 +1,19 @@
 
 import { useParams } from "react-router-dom";
 
-export default function Movie({movies}){
+export default function Serie({series}){
     const {id} = useParams();
-    const movie = movies.find((m) => m.id === Number(id));
-    if(!movie){
-        return <h2>Movie not found !</h2>;
+    const serie = series.find((s) => s.id === Number(id));
+    if(!serie){
+        return <h2>Serie not found !</h2>;
     }
     
     
 
     return(
         <div className="flex flex-col gap-y-[20px]">
-            <img className="w-full" src={`/public/assets/images/${movie.img}`}/>
-            <h1>{movie.name}</h1>
+            <img className="w-full" src={`/public/assets/images2/${serie.img}`}/>
+            <h1>{serie.name}</h1>
             <p className="text-[white] text-lg">
             Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever

@@ -22,8 +22,8 @@ export default function AllSeries(props){
                     className="box"
                     key={s.id}
                     >
-                        <Link to={`/movie/${s.id}`}>
-                            <img src={`/public/assets/images2/${s.img}`} alt="movie" />
+                        <Link to={`/serie/${s.id}`}>
+                            <img src={`/public/assets/images2/${s.img}`} alt="serie" />
                        </Link>
                        
                         <p className="content-header">

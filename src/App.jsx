@@ -8,12 +8,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import Movie from './components/Movie';
 import moviesData from "./assets/data/movies.json";
-import User from './components/User';
+import seriesData from "./assets/data/series.json";
+import Login from './components/Login';
 import AllSeries from './components/AllSeries';
+import { ToastContainer, toast } from 'react-toastify';
+import User from './components/User';
+import Serie from './components/Serie';
 
 function App() {
 
-
+  const [series, setSeries] = useState(seriesData);
   const [movies, setMovies] = useState(moviesData);
   const [searchText, setSearcText] = useState("");
 
@@ -48,13 +52,19 @@ function App() {
        element={<Movie/>}
        />
        <Route path="/movie/:id" element={<Movie movies={movies} />} />
+       <Route path="/serie/:id" element={<Serie series={series} />} />
        <Route
+       path='/login'
+       element={<Login/>}
+       />
+        <Route
        path='/user'
        element={<User/>}
        />
       </Routes>
       <Footer/>
       </Router>
+      <ToastContainer theme="dark"/>
     </div>
   );
 }

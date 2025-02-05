@@ -22,7 +22,7 @@ export default function Footer(){
             </div>
             <div className="footer-mid">
                 <p>Follow Us</p>
-                <div>
+                <div className="flex">
                     <Link to="https://www.facebook.com/"> <img className="social-logo" src={social1} alt="facebook"/></Link>
                     <Link to="https://www.youtube.com/"> <img className="social-logo" src={social2} alt="youtube"/></Link>
                     <Link to="https://www.x.com/"><img className="social-logo" src={social3} alt="twitter"/></Link>

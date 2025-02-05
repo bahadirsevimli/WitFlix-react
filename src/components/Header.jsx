@@ -5,8 +5,8 @@ import './Header.css';
 import { Link } from "react-router-dom";
 
 export default function Header(props) {
+  const email = localStorage.getItem("email");
   const { setFunction } = props;
-  const [search, setSearch] = useState("");
 
 function changeHandler(e){
   setFunction(e.target.value.toLowerCase());
@@ -34,9 +34,10 @@ function changeHandler(e){
       </nav>
       <div className="search">
         <input id='header-input' onChange={changeHandler} type="text" placeholder="  Search.." />
-        <Link to="/user">
+        <Link to={email ? "/user" : "/login"}>
           <img src={user} />
         </Link>
+
       </div>
     </header>
   );
