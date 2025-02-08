@@ -24,7 +24,7 @@ export default function Allmovies (props){
                 key={movie.id}
                 >
                     <Link to={`/movie/${movie.id}`}>
-                        <img className="w-full rounded-2xl h-full object-cover" src={`/public/assets/images/${movie.img}`} alt="movie" />
+                        <img className="w-full rounded-2xl h-full object-cover" src={`/dist/assets/images/${movie.img}`} alt="movie" />
                    </Link>
                   
                     <p className="text-white mt-3 text-center ">
