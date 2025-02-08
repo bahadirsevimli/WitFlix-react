@@ -12,7 +12,6 @@ export default function Allmovies (props){
         setFilms(movieData);
     }, []);
 
-    console.log(films)
 
     return(
        <div className="flex w-full flex-wrap justify-between gap-y-24 gap-x-4">
