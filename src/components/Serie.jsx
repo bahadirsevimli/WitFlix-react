@@ -12,7 +12,7 @@ export default function Serie({series}){
 
     return(
         <div className="flex flex-col gap-y-[20px]">
-            <img className="w-full" src={`/public/assets/images2/${serie.img}`}/>
+            <img className="w-full" src={`/public/assets/images-detail-series/${serie.img}`}/>
             <h1>{serie.name}</h1>
             <p className="text-[white] text-lg">
             Lorem Ipsum is simply dummy text of the printing and typesetting

@@ -1,4 +1,4 @@
-import "./Section.css"
+
 import img1 from "../assets/images/1.jpg"
 import img2 from "../assets/images/2.jpg"
 import img3 from "../assets/images/3.jpg"
@@ -12,54 +12,54 @@ export default function Section(){
 
 
 return(
-    <section>
-        <div className="suggestion-row-1">
-                <div className="suggestion-title">
-                    <h2>Popular Movies</h2>
-                    <Link className="a" to="/allmovies">View All</Link>
+    <section className="text-white flex flex-col gap-10 w-full">
+        <div className="flex flex-col gap-2">
+                <div className="flex justify-between">
+                    <h2 className="text-5">Popular Movies</h2>
+                    <Link className="text-white" to="/allmovies">View All</Link>
                 </div>
-                <div className="suggestion-content">
+                <div className="sm:flex-row flex flex-col gap-2 justify-between">
 
-                    <div className="suggestion-item" style={{ backgroundImage: `url(${img1})` }}>
-                        <div className="small">
+                    <div className=" sm:m-0 sm:w-[31%] h-[200px] pt-[30px] pr-0 pb-[15px] pl-[5px] rounded-3 bg-no-repeat bg-cover relative" style={{ backgroundImage: `url(${img1})` }}>
+                        <div className="hidden sm:block absolute bottom-1 ">
                             <Button/>
                         </div>
                     </div>
 
-                    <div className="suggestion-item" style={{ backgroundImage: `url(${img2})` }}>
-                        <div className="small">
+                    <div className="sm:w-[31%] h-[200px] pt-[30px] pr-0 pb-[15px] pl-[5px] rounded-3 bg-no-repeat bg-cover relative" style={{ backgroundImage: `url(${img2})` }}>
+                        <div className="hidden sm:block absolute bottom-1">
                             <Button/>
                         </div>
                     </div>
 
-                    <div className="suggestion-item" style={{ backgroundImage: `url(${img3})` }}>
-                         <div className="small">
+                    <div className="sm:w-[31%] h-[200px] pt-[30px] pr-0 pb-[15px] pl-[5px] rounded-3 bg-no-repeat bg-cover relative" style={{ backgroundImage: `url(${img3})` }}>
+                         <div className="hidden sm:block absolute bottom-1">
                             <Button/>
                         </div>
                     </div>  
                 </div>
         </div>
-        <div className="suggestion-row-2">
-                <div className="suggestion-title">
+        <div className="flex flex-col gap-2">
+                <div className="flex justify-between">
                     <h2>Recommended for You</h2>
-                    <Link className="a" to="/allmovies">View All</Link>
+                    <Link className="text-white" to="/allmovies">View All</Link>
                 </div>
-                <div className="suggestion-content">
+                <div className="sm:flex-row flex flex-col gap-2 justify-between">
 
-                    <div className="suggestion-item" style={{ backgroundImage: `url(${img4})` }}>
-                        <div className="small">
+                    <div className="sm:w-[31%] h-[200px] pt-[30px] pr-0 pb-[15px] pl-[5px] rounded-3 bg-no-repeat bg-cover relative" style={{ backgroundImage: `url(${img4})` }}>
+                        <div className="hidden sm:block absolute bottom-1">
                             <Button/>
                         </div>
                     </div>
 
-                    <div className="suggestion-item" style={{ backgroundImage: `url(${img5})` }}>
-                        <div className="small">
+                    <div className="sm:w-[31%] h-[200px] pt-[30px] pr-0 pb-[15px] pl-[5px] rounded-3 bg-no-repeat bg-cover relative" style={{ backgroundImage: `url(${img5})` }}>
+                        <div className="hidden sm:block absolute bottom-1">
                             <Button/>
                         </div>
                     </div>
 
-                    <div className="suggestion-item" style={{ backgroundImage: `url(${img6})` }}>
-                        <div className="small">
+                    <div className="sm:w-[31%] h-[200px] pt-[30px] pr-0 pb-[15px] pl-[5px] rounded-3 bg-no-repeat bg-cover relative" style={{ backgroundImage: `url(${img6})` }}>
+                        <div className="hidden sm:block absolute bottom-1">
                             <Button/>
                         </div>
                     </div>  

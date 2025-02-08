@@ -12,7 +12,7 @@ export default function Movie({movies}){
 
     return(
         <div className="flex flex-col gap-y-[20px]">
-            <img className="w-full" src={`/public/assets/images/${movie.img}`}/>
+            <img className="w-full" src={`/public/assets/images-detail-movies/${movie.img}`}/>
             <h1>{movie.name}</h1>
             <p className="text-[white] text-lg">
             Lorem Ipsum is simply dummy text of the printing and typesetting
