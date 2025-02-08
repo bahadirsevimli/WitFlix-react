@@ -23,7 +23,7 @@ export default function AllSeries(props){
                     key={s.id}
                     >
                         <Link to={`/serie/${s.id}`}>
-                            <img className="w-full rounded-2xl h-full object-cover" src={`/dist/assets/images2/${s.img}`} alt="serie" />
+                            <img className="w-full rounded-2xl h-full object-cover" src={`/assets/images2/${s.img}`} alt="serie" />
                        </Link>
                        
                         <p className="text-white mt-3 text-center">
