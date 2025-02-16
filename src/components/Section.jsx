@@ -22,19 +22,25 @@ return(
 
                     <div className=" sm:m-0 sm:w-[31%] h-[200px] pt-[30px] pr-0 pb-[15px] pl-[5px] rounded-3 bg-no-repeat bg-cover relative" style={{ backgroundImage: `url(${img1})` }}>
                         <div className="hidden sm:block absolute bottom-1 ">
-                            <Button/>
+                            <Link to="/movie/1">
+                                <Button/>
+                            </Link>
                         </div>
                     </div>
 
                     <div className="sm:w-[31%] h-[200px] pt-[30px] pr-0 pb-[15px] pl-[5px] rounded-3 bg-no-repeat bg-cover relative" style={{ backgroundImage: `url(${img2})` }}>
                         <div className="hidden sm:block absolute bottom-1">
-                            <Button/>
+                        <Link to="/movie/2">
+                                <Button/>
+                            </Link>
                         </div>
                     </div>
 
                     <div className="sm:w-[31%] h-[200px] pt-[30px] pr-0 pb-[15px] pl-[5px] rounded-3 bg-no-repeat bg-cover relative" style={{ backgroundImage: `url(${img3})` }}>
                          <div className="hidden sm:block absolute bottom-1">
-                            <Button/>
+                         <Link to="/movie/3">
+                                <Button/>
+                            </Link>
                         </div>
                     </div>  
                 </div>
@@ -48,19 +54,25 @@ return(
 
                     <div className="sm:w-[31%] h-[200px] pt-[30px] pr-0 pb-[15px] pl-[5px] rounded-3 bg-no-repeat bg-cover relative" style={{ backgroundImage: `url(${img4})` }}>
                         <div className="hidden sm:block absolute bottom-1">
-                            <Button/>
+                        <Link to="/movie/4">
+                                <Button/>
+                            </Link>
                         </div>
                     </div>
 
                     <div className="sm:w-[31%] h-[200px] pt-[30px] pr-0 pb-[15px] pl-[5px] rounded-3 bg-no-repeat bg-cover relative" style={{ backgroundImage: `url(${img5})` }}>
                         <div className="hidden sm:block absolute bottom-1">
-                            <Button/>
+                        <Link to="/movie/5">
+                                <Button/>
+                            </Link>
                         </div>
                     </div>
 
                     <div className="sm:w-[31%] h-[200px] pt-[30px] pr-0 pb-[15px] pl-[5px] rounded-3 bg-no-repeat bg-cover relative" style={{ backgroundImage: `url(${img6})` }}>
                         <div className="hidden sm:block absolute bottom-1">
-                            <Button/>
+                        <Link to="/movie/6">
+                                <Button/>
+                            </Link>
                         </div>
                     </div>  
                 </div>

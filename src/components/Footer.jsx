@@ -31,8 +31,8 @@ export default function Footer(){
             <div className="flex flex-col gap-2">
                 <p>Apps</p>
                 <div>
-                    <img className="w-40 sm:opacity-50 sm:hover:opacity-100" src={social4} alt="app store logo"/>
-                    <img className="w-40 sm:opacity-50 sm:hover:opacity-100" src={social5} alt="google play logo"/>
+                    <Link to="https://www.apple.com/tr/app-store/"><img className="w-40 sm:opacity-50 sm:hover:opacity-100" src={social4} alt="app store logo"/></Link>
+                    <Link to="https://play.google.com/store/apps"><img className="w-40 sm:opacity-50 sm:hover:opacity-100" src={social5} alt="google play logo"/></Link>
                 </div>
             </div>
         </footer>

@@ -1,6 +1,7 @@
 import './Main.css';
 import Background from '../assets/images/bg.jpg';
 import Button from './small-components/Button';
+import { Link } from 'react-router-dom';
 export default function Main() {
   return (
     <main className='sm:min-w-2xl sm:h-[500px] w-full h-[450px] sm:text-lg sm:leading-5 text-white text-sm leading-5'>
@@ -39,7 +40,9 @@ export default function Main() {
           </li>
         </ul>
         <div  className="hidden sm:block">
-          <Button/>
+          <Link to="/movie/0">
+            <Button/>
+          </Link>
        </div>
       </div>
     </main>
